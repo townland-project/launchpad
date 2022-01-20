@@ -7,7 +7,7 @@ export const Box = () => {
 
     return (
         <div
-            className="flex flex-col bg-white rounded-xl shadow-lg min-w-[400px] w-[400px] p-[20px]">
+            className="flex flex-col bg-white sm:rounded-xl shadow-lg h-screen sm:h-fit w-full sm:max-w-[360px] lg:max-w-[400px] lg:min-w-[400px] p-[20px] pt-[120px] sm:pt-[20px] transition-all duration-300">
             <h2 className="text-gray-700 text-xl font-bold mb-2">Exchange your tokens</h2>
             <p className="text-gray-500 mb-12">
                 From your wallet to Townland world
@@ -44,7 +44,7 @@ export const Box = () => {
                                 }
                             </div>
                         </div>
-                        <div className="flex flex-nowrap items-center relative top-[14px]">
+                        <div className="ml-auto flex flex-nowrap items-center relative top-[14px]">
                             <input className="w-full text-right outline-none" type="number" value={1} />
                             <sub className="text-slate-600 uppercase">{SelectedToken.key}</sub>
                         </div>
@@ -69,15 +69,15 @@ export const Box = () => {
                                 TOWL
                             </div>
                         </div>
-                        <div className="flex flex-nowrap items-center relative top-[10px]">
-                            <input disabled className="w-full bg-transparent text-right outline-none" type="number" value={1} />
+                        <div className="ml-auto flex flex-nowrap items-center relative top-[10px]">
+                            <input disabled className="w-full bg-transparent text-right outline-none" type="number" defaultValue={1} />
                             <sub className="text-slate-600 uppercase">TOWL</sub>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button className="py-3 mt-8 rounded-2xl bg-red-400 text-white hover:scale-105 active:scale-100 transition-all duration-300">
+            <button className="py-3 mt-auto sm:mt-8 rounded-2xl bg-red-400 text-white hover:scale-105 active:scale-100 transition-all duration-300">
                 Buy Tokens
             </button>
 

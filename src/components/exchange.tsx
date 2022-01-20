@@ -7,10 +7,10 @@ export const Exchange = () => {
         <main data-simplebar className="bg-slate-100 w-screen h-screen font-roboto relative select-none overflow-y-auto overflow-x-hidden">
             <Header />
 
-            <div className="flex flex-nowrap w-screen h-screen">
-                <section className="flex flex-col items-center justify-center w-6/12 bg-amber-200">
+            <div className="flex md:flex-nowrap w-screen h-screen">
+                <section className="md:flex flex-col items-center justify-center w-6/12 bg-amber-200 hidden">
                     <div className="pl-[4vw] pr-[8vw]">
-                        <h1 className="text-amber-800 leading-snug text-6xl">
+                        <h1 className="text-amber-800 leading-snug text-3xl font-bold lg:text-6xl lg:font-normal">
                             <span className="text-blue-600">Pre buy</span> Townland token instantly before first release.
                         </h1>
 
@@ -19,7 +19,7 @@ export const Exchange = () => {
                         </p>
                     </div>
                 </section>
-                <section className="flex flex-col items-center justify-center w-6/12">
+                <section className="flex flex-col items-center justify-center w-full md:w-6/12 bg-amber-200 lg:bg-transparent">
                     <Box />
                 </section>
             </div>

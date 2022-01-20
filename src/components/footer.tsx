@@ -2,7 +2,7 @@ import { Social } from "../database/footer"
 
 export const Footer = () => {
     return (
-        <footer className="flex flex-nowrap items-center px-[10vw] py-[30px] absolute bottom-0 left-0 right-0">
+        <footer className="hidden md:flex flex-nowrap items-center px-[5vw] lg:px-[10vw] py-[30px] absolute bottom-0 left-0 right-0">
             <a
                 className="mx-5 text-ms text-gray-600 hover:text-amber-600 flex items-center justify-center"
                 href="https://townland.xyz">
